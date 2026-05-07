@@ -14,3 +14,22 @@ permalink: /:year/:month/:day/:title/
 minimal_mistakes_skin: "dark"
 
 title_separator: "|"
+
+author:
+  name: "DozeInject"
+  bio: "Security enthusiast focused on web security and CTFs"
+  avatar: ""
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
