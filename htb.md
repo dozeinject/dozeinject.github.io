@@ -6,20 +6,31 @@ permalink: /htb/
 
 # HackTheBox Writeups
 
-Welcome to my HackTheBox writeups collection. Here, you'll find all the machines I've worked on, organized by difficulty. Each machine links to its detailed writeup.
+Welcome to my HackTheBox writeups collection. All machines are organized by difficulty and automatically listed below.
 
 ---
 
+{% assign easy = site.categories.htb | where: "difficulty", "Easy" %}
+{% assign medium = site.categories.htb | where: "difficulty", "Medium" %}
+{% assign hard = site.categories.htb | where: "difficulty", "Hard" %}
+
+{% if easy.size > 0 %}
 ## Difficulty: Easy
+{% for post in easy %}
+- [{{ post.title }}]({{ post.url }}){% if post.excerpt %} – {{ post.excerpt }}{% endif %}
+{% endfor %}
+{% endif %}
 
-- [Example Machine 1](link-to-post) – brief description (optional)
-- [Example Machine 2](link-to-post) – brief description (optional)
-
+{% if medium.size > 0 %}
 ## Difficulty: Medium
+{% for post in medium %}
+- [{{ post.title }}]({{ post.url }}){% if post.excerpt %} – {{ post.excerpt }}{% endif %}
+{% endfor %}
+{% endif %}
 
-- [Example Machine 3](link-to-post)
-- [Example Machine 4](link-to-post)
-
+{% if hard.size > 0 %}
 ## Difficulty: Hard
-
-- [Example Machine 5](link-to-post)
+{% for post in hard %}
+- [{{ post.title }}]({{ post.url }}){% if post.excerpt %} – {{ post.excerpt }}{% endif %}
+{% endfor %}
+{% endif %}
