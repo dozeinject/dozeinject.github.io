@@ -4,8 +4,6 @@ title: HackTheBox Writeups
 permalink: /htb/
 ---
 
-# HackTheBox Writeups
-
 Welcome to my HackTheBox writeups collection. All machines are organized by difficulty and automatically listed below.
 
 ---
