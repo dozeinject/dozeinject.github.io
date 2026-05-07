@@ -10,3 +10,4 @@ plugins:
 markdown: kramdown
 
 permalink: /:year/:month/:day/:title/
+minimal_mistakes_skin: "dark"
