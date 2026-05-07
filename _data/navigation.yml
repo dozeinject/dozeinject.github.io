@@ -5,3 +5,10 @@ main:
     url: /
   - title: "All Posts"
     url: /year-archive/
+main:
+  - title: "About"
+    url: /about/
+  - title: "Writeups"
+    url: /year-archive/
+  - title: "GitHub"
+    url: https://github.com/dozeinject
