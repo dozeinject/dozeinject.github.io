@@ -1,6 +1,12 @@
-title: DozeInject - Blog
-description: 
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-midnight
+title: DozeInject
+description: Cybersecurity notes, web security labs and CTF writeups
+
+remote_theme: "mmistakes/minimal-mistakes"
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+
+markdown: kramdown
+
 permalink: /:year/:month/:day/:title/
