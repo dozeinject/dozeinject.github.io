@@ -10,12 +10,7 @@ plugins:
 markdown: kramdown
 
 permalink: /:year/:month/:day/:title/
-minimal_mistakes_skin: "dark"
-title_separator: "|"
 
-navigation:
-  main:
-    - title: "About"
-      url: /about/
-    - title: "Home"
-      url: /
+minimal_mistakes_skin: "dark"
+
+title_separator: "|"
